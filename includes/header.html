@@ -1,0 +1,65 @@
+<?php #header
+ob_start();
+session_start();
+if(!isset($page_title))
+{
+$page_title='User Registration';
+}
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+a:link {
+    color:7286FF;
+    background-color:transparent;
+    text-decoration:none;
+	}
+#header {
+    background-color:05107F;
+    color:7286FF;
+	font-family:'Segoe UI';
+    text-align:left;
+	position:absolute;
+	top: 0%;
+        left: 1%;
+        width: 97%;
+        height: 10%;
+		border-style: outset;
+        overflow: visible;
+        margin: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-width: 3px;		
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+	 position: absolute;
+        top: 90%;
+        left: 1%;
+        width: 97%;
+        height: 10%;
+		border-style: outset;
+        overflow: visible;
+        margin: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-width: 3px;	
+}
+</style>
+<title><?php echo$page_title; ?>  </title>
+</head>
+<body>
+<div id="header" align="center">
+<center>
+<h2> SNU MESS CARD EXPENSE MANAGER </h2>
+</center>
+</div>
+<div id="Content">

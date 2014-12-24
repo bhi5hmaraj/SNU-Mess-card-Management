@@ -1,0 +1,25 @@
+body {
+background:#FF3300;
+}
+.head
+{
+font-family:'Segoe UI';
+color: #000000;
+}
+.subhead
+{
+font-family:'Segoe UI';
+}
+.box
+{
+ padding: 40px;
+background-image:url('http://24.media.tumblr.com/9f472bbc131ea14f7d7f8a1596f08a49/tumblr_mopmzobnPS1rk1qp5o1_500.gif');
+width: 360px;
+display: table;
+height: 150px;
+margin: 60px auto 30px;
+position: relative;
+border-radius:15px;
+box-shadow: 0 0 5px rgba(0,0,0,0.1), 0 3px 2px rgba(0,0,0,0.1);
+}
+}

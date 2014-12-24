@@ -1,0 +1,27 @@
+</div>
+<div id="footer">
+<?php
+if(isset($_SESSION['user_id'])) #to check whether user is logged in
+{
+echo '<p><a href="DispTable.php" title="Home" position="absolute" left="20px">Home</a>  ';
+echo '<a href="logout.php" title="Logout">Logout</a>';
+echo '  ';
+//echo '<a href="change_password.php" title="Change Password">Change Password</a></p>';
+if($_SESSION['user_id']==1)    #for admin
+{
+echo '<a href="view_users.php" title="View Users">View Users</a><br>';
+}
+}
+else   #Not logged in
+{
+echo'<p><a href="index.php" title="Home Page">Home</a>     ';
+echo '<a href="register.php" title="Click here to register">Register</a>';
+echo '  ';
+echo '<a href="login.php" title="Login">Login</a></p>';
+}
+?>
+</div>
+</body>
+</html>
+<?php ob_end_flush(); ?>
+
